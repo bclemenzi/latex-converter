@@ -32,7 +32,7 @@ public class LaTeXConverter
      * @return
      * @throws Exception
      */
-    public File convertToImage(String latexString) throws Exception
+    public static File convertToImage(String latexString) throws Exception
     {
         File tempFile = File.createTempFile("latex", ".png");
         
@@ -48,7 +48,7 @@ public class LaTeXConverter
      * @param latexString
      * @throws Exception
      */
-    public void convertToImage(File imageFile, String latexString) throws Exception
+    public static void convertToImage(File imageFile, String latexString) throws Exception
     {
         TeXFormula formula = new TeXFormula(latexString);
         
